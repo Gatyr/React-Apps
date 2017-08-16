@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.navbar {
+	background-color: #39444a;
+	display: inline-block;
+	width: 100%;
+	color: white;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	height: 70px;
+	margin-bottom: 0;
+	align-content: center;
+	text-align: center;
+
+}
+
+.navbar li {
+	display: inline-block;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.navbar h3 {
+	padding-right: 30px;
+}
+
+.navbar img {
+	margin-bottom: 10.5px;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+	background-color: #39444a;
+	align-content: center;
+	text-align: center;
+	left: 0;
+}
+
+.footer li {
+	display: inline-block;
+}
+.footer ul {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.footer p {
+	color: white;
+}
+
+.footer img {
+	height: 59px;
+	width: auto;
+	margin: 10px;
+}
+
+#link-directory-div {
+	width: 200px;
+	background-color: #618192;
+	position: absolute;
+	
+}
+
+.jumbotron {
+	align-content: center;
+	font-weight: 800;
+	height: 600px;
+	background-image: url("./lucio_background_small.png");
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	vertical-align: middle;
+
+}
+
+.jumbotron .container {
+	width: 60%;
+}
+
+#jumbotron-footer {
+	position: absolute;
+	bottom: 0;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+}
+
+#jumbotron-footer a {
+	padding: 10px;
+}
+
+#technologies {
+	align-content: center;
+	text-align: center;
+}
+
+#technologies img {
+	height: 60px;
+	width: auto;
+	margin: 10px;
+}
+
+.img-div {
+	width: 10%;
+	display: inline-block;
+}
+
+#professional-experience {
+	align-content: center;
+	text-align: center;
+}
+
+#about-div {
+	width: 100%;
+	text-align: center;
+}
+
+.about-me {
+	width: 100%;
+}
+
+#img-div img {
+	height: 250px;
+	width: auto;
+}
+#exercise img, #overwatch img, #csgo img, #programming img {
+	height: 40px;
+	width: auto;
+}
+
+#exercise, #overwatch, #csgo, #programming {
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+}
+
+#hobbies {
+	display: inline-block;
+	vertical-align: top;
+}
+#hobbies h4 {
+	font-weight: bold;
+}
+.about-me {
+	display: inline-block;
+}
+
+#projects-nav {
+	background-color: #68696b;
+	height: 15px;
+}
