@@ -58,19 +58,3 @@ class DataDisplay extends Component {
 }
 
 export default DataDisplay
-
-/*
-
-
-componentWillMount() {
-		axios.get("http://localhost:4200/items")
-		.then(response => {
-			console.log("componentWillMount response data: " + response.data)
-			this.setState({items: response.data});
-		})
-		.catch(function(error) {
-			console.log(error);
-		});
-	}
-
-	*/

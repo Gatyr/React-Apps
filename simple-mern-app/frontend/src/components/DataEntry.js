@@ -43,9 +43,6 @@ class DataEntry extends Component {
 					value={this.state.name}
 					onChange={this.handleChange} 
 					className="form-control" />
-					{/*since the value attribute is set on the form element, the displayed value will always be this.state.value
-					since handleChange runs on every keystroke to update the react state, the displayed value will update as the user types
-					with a controlled component, every state mutation will have an associated handler function*/}
 					<h3>Enter your post</h3>
 					<input
 					name="post"

@@ -6,7 +6,7 @@ const Chat = ({match}) => (
       <div className="col-lg-12">
         <div className="panel panel-default">
           <div className="panel-heading">
-            <h3 className="panel-title">Movie Info</h3>
+            <h3 className="panel-title">What the internet has to say:</h3>
           </div>
           <div className="panel-body">
             <p><strong>Roadhog:</strong> I'm mad because I got nerfed </p>

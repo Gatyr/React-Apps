@@ -8,7 +8,7 @@ const Main = () => (
     <div className="row">
       <div className="jumbotron">
         <h1>React Router</h1>
-        <p><em>Because we can't afford to miss a minute of this video! #flylikeaneagle</em></p>
+        <p><em>Because we're sick of people being so toxic!</em></p>
         <Link to="/info"><button className="btn btn-default">Info</button></Link>
         <Link to="/chat"><button className="btn btn-default">Comments</button></Link>
       </div>
