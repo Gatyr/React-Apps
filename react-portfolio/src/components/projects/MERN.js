@@ -39,7 +39,7 @@ class MERN extends Component {
 							<button className="btn btn-link" onClick={this.handleClick} value="4">4</button>
 							<button className="btn btn-link" onClick={this.handleClick} value="5">5</button>
 						</div>
-						<img id="myImg" src={"/project-images/MERN/MERN"+ this.state.src + ".png"} alt="" width="500" height="266"/>
+						<img id="myImg" src={"/project-images/mern/mern"+ this.state.src + ".png"} alt="" width="500" height="266"/>
 						<p>{picDesc.mern[this.state.src - 1]}</p>
 					</div>
 					<div className="col-md-3" id="what-I-learned">

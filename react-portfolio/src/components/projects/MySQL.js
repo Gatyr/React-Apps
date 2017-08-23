@@ -32,7 +32,7 @@ class MySQL extends Component {
 							<button className="btn btn-link" onClick={this.handleClick} value="1">1</button>
 							<button className="btn btn-link" onClick={this.handleClick} value="2">2</button>
 						</div>
-						<img id="myImg" src={"/project-images/MySQLStore/MySQL"+ this.state.src + ".png"} alt="" width="500" height="266"/>
+						<img id="myImg" src={"/project-images/MySQLstore/mysql"+ this.state.src + ".png"} alt="" width="500" height="266"/>
 						<p>{picDesc.mysql[this.state.src - 1]}</p>
 					</div>
 					<div className="col-md-3" id="what-I-learned">

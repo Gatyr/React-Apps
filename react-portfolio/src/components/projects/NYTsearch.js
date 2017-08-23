@@ -42,7 +42,7 @@ class NYTsearch extends Component {
 							<button className="btn btn-link" onClick={this.handleClick} value="5">5</button>
 							<button className="btn btn-link" onClick={this.handleClick} value="6">6</button>
 						</div>
-						<img id="myImg" src={"/project-images/NYTsearchreact/NYTsearch"+ this.state.src + ".png"} alt="" width="500" height="266"/>
+						<img id="myImg" src={"/project-images/NYTsearchReact/nytsearch"+ this.state.src + ".png"} alt="" width="500" height="266"/>
 						<p>{picDesc.nytsearch[this.state.src - 1]}</p>
 					</div>
 					<div className="col-md-3" id="what-I-learned">

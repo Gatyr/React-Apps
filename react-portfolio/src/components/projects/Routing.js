@@ -32,7 +32,7 @@ class Routing extends Component {
 							<button className="btn btn-link" onClick={this.handleClick} value="2">2</button>
 							<button className="btn btn-link" onClick={this.handleClick} value="3">3</button>
 						</div>
-						<img id="myImg" src={"/project-images/ReactRouter/ReactRouter"+ this.state.src + ".png"} alt="" width="500" height="266"/>
+						<img id="myImg" src={"/project-images/ReactRouter/reactrouter"+ this.state.src + ".png"} alt="" width="500" height="266"/>
 						<p>{picDesc.routing[this.state.src - 1]}</p>
 					</div>
 					<div className="col-md-3" id="what-I-learned">
