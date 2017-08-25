@@ -67,7 +67,7 @@ body {
 .jumbotron {
 	align-content: center;
 	font-weight: 800;
-	height: 600px;
+	height: 500px;
 	background-image: url("./lucio_background_small.png");
 	background-position: center;
 	background-color: rgba(0, 0, 0, 0.2);
@@ -94,7 +94,7 @@ body {
 	text-align: center;
 	font-weight: bold;
 	position: absolute;
-	top: 550px;
+	top: 525px;
 	width: 100%;
 }
 
@@ -104,7 +104,12 @@ body {
 
 #jumbotron-footer a {
 	padding: 10px;
+	background-color: #39444a;
+	border-radius: 5px;
+	margin-left: 5px;
 }
+
+
 
 #technologies {
 	align-content: center;

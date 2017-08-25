@@ -42,7 +42,7 @@ class Experience extends Component {
 						<h4>Reliably Independent</h4>
 						<img src="../../../independent.png" alt="" />
 						<p>Part of being an effective team member is being able to work independently in the context of that team. I pride myself in being able to work resolutely with no oversight, 
-						as this enables my superiors to allocate their efforts elsewhere and dmeonstrates that I can be trusted.</p>
+						as this enables my superiors to allocate their efforts elsewhere and demonstrates that I can be trusted.</p>
 					</div>
 					<div className="experience">
 						<h4>Proactive</h4>
@@ -58,25 +58,3 @@ class Experience extends Component {
 }
 
 export default Experience
-
-//info
-
-	//technologies I work with
-
-	//professional experience
-		//resume
-			//pretty the shit up for the page
-		//intangibles
-			//highlight communication skills
-			//highlight ability to work independently and as part of a team 
-			//reliability 
-
-	//aspirations with web development
-		//career change and financial security
-		//ideal aspirations:
-			//work with friends in 501 c3 to improve visibility and connectivity
-			//maybe automate the boring or easy stuff with js (or python, in the future) scripts
-		//short term:
-			//learn in a professional environment 
-
-	
