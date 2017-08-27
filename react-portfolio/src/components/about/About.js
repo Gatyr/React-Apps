@@ -10,24 +10,18 @@ class About extends Component {
 						<img src="../../../me.jpg" alt=""/>
 					</div>
 					<div id="hobbies">
-						<div id="exercise">
+						<div className="hobby" id="exercise">
 							<img src="../../../dumbbell.png" alt=""/>
 							<h4>exercise</h4>
 							<p>Exercise is a key component of stress relief for me. I enjoy lifting weights and participating in mixed martial arts classes.</p>
 						</div>
-						<div id="overwatch">
-							<img src="../../../overwatch.png" alt="" />
-							<h4>overwatch</h4>
-							<p>Competing in something is another key component of stress relief, and at the moment, Overwatch is my go-to game. 
-							I'm a flex player, but my favorite hero is Genji. It's a wonderful game with many aspects to it, so I expect I'll be playing it for a long time to come.</p>
-						</div>
-						<div id="csgo">
+						<div className="hobby" id="csgo">
 							<img src="../../../csgo.png" alt="" />
-							<h4>cs:go</h4>
-							<p>Counter-Strike: Global Offensive is my favorite sport to watch. It is a highly-strategic first person shooter gaining popularity, and I enjoy watching it in the 
-							same way people enjoy watching football or basketball.</p>
+							<h4>Video Games</h4>
+							<p>Counter-Strike: Global Offensive is my favorite competition to watch, and Overwatch is my favorite game to play. I've always needed a competitive outlet,
+							and these two games provide that outlet for me.</p>
 						</div>
-						<div id="programming">
+						<div className="hobby" id="programming">
 							<img src="../../../programming.png" alt="" />
 							<h4>programming</h4>
 							<p>I write code because I like building things, and unlike metal/woodworking, there's no cost for the raw materials! I'm currently putting all of my effort into 

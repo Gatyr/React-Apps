@@ -10,7 +10,7 @@ class Main extends Component {
 			<div id="main-div">
 				<nav className="navbar navbar-light">
 					<ul>
-						<li><Link to="/">About Me</Link></li>
+						<li><Link to="/info/experience">About Me</Link></li>
 						<li><Link to="/projects">Completed Projects</Link></li>
 						<li>In Progress</li>
 					</ul>
