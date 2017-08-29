@@ -1,6 +1,4 @@
-@media (min-width: 1000px) {
-
-	body {
+body {
 		margin: 0;
 		padding: 0;
 		font-family: sans-serif;
@@ -112,8 +110,6 @@
 		margin-left: 5px;
 	}
 
-
-
 	#technologies {
 		align-content: center;
 		text-align: center;
@@ -124,11 +120,6 @@
 		height: 60px;
 		width: auto;
 		margin: 10px;
-	}
-
-	.img-div {
-		width: 10%;
-		display: inline-block;
 	}
 
 	#professional-experience {
@@ -153,13 +144,6 @@
 	#exercise img, #overwatch img, #csgo img, #programming img {
 		height: 40px;
 		width: auto;
-	}
-
-	#exercise, #overwatch, #csgo, #programming {
-		width: 20%;
-		display: inline-block;
-		vertical-align: top;
-		margin: 10px;
 	}
 
 	#hobbies {
@@ -231,265 +215,78 @@
 		display: inline-block;
 	}
 
+	.experience img {
+		width: 40px;
+		height: auto;
+	}
+
+	#buttonContainer {
+		margin: 10px;
+		padding-left: 10px;
+	}
+
+	#container2 {
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+	.img {
+		float: left; 
+	}
+
+#giphy-dem button {
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+#add-button-div button {
+	margin: 0;
+	height: 40px;
+}
+
+#add-button-div input {
+	margin-right: 10px;
+}
+
+@media (min-width: 1000px) {
+	.img-div {
+		width: 10%;
+		display: inline-block;
+	}
+
+	#exercise, #overwatch, #csgo, #programming {
+		width: 20%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px;
+	}
+
 	.experience {
 		width: 25%;
 		display: inline-block;
 		vertical-align: top;
 	}
 
-	.experience img {
-		width: 40px;
-		height: auto;
-	}
-
 }
+
+
 
 @media (max-width: 999px) {
-		body {
-		margin: 0;
-		padding: 0;
-		font-family: sans-serif;
-		min-height: 100%;
-	}
-
-	.navbar {
-		background-color: #39444a;
-		display: inline-block;
-		width: 100%;
-		color: white;
-		-webkit-border-radius: 0;
-		-moz-border-radius: 0;
-		border-radius: 0;
-		height: 70px;
-		margin-bottom: 0;
-		align-content: center;
-		text-align: center;
-
-	}
-
-	.navbar li {
-		display: inline-block;
-		padding-left: 20px;
-		padding-top: 20px;
-	}
-
-	.navbar h3 {
-		padding-right: 30px;
-	}
-
-	.footer {
-		bottom: 0;
-		width: 100%;
-		height: 120px;
-		background-color: #39444a;
-		align-content: center;
-		text-align: center;
-		left: 0;
-	}
-
-	.footer li {
-		display: inline-block;
-	}
-	.footer ul {
-		padding-left: 0;
-		margin-bottom: 0;
-	}
-	.footer p {
-		color: white;
-	}
-
-	.footer img {
-		height: 59px;
-		width: auto;
-		margin: 10px;
-	}
-
-	#link-directory-div {
-		width: 200px;
-		background-color: #618192;
-		position: absolute;
-		
-	}
-
-	.jumbotron {
-		align-content: center;
-		font-weight: 800;
-		height: 500px;
-		background-image: url("./images/soccer.jpg");
-		background-position: center;
-		background-size: cover;
-		background-color: rgba(0, 0, 0, 0.2);
-		vertical-align: middle;
-		margin-bottom: 0;
-		padding-bottom: 0;
-	}
-
-	.jumbotron .container {
-		width: 60%;
-	}
-
-	#home-nav {
-		position: absolute;
-		bottom: 0;
-		width: 60%;
-		margin-left: 20%;
-		margin-right: 20%;
-		text-align: center;
-	}
-
-	#jumbotron-footer {
-		align-content: center;
-		text-align: center;
-		font-weight: bold;
-		position: absolute;
-		top: 525px;
-		width: 100%;
-	}
-
-	#jumbotron-footer li, #project-picture li {
-		display: inline-block;
-	}
-
-	#jumbotron-footer a {
-		padding: 10px;
-		background-color: #39444a;
-		border-radius: 5px;
-		margin-left: 5px;
-	}
-
-
-
-	#technologies {
-		align-content: center;
-		text-align: center;
-		box-sizing: border-box;
-
-	}
-
-	#technologies img {
-		height: 60px;
-		width: auto;
-		margin: 10px;
-	}
-
 	.img-div {
-		width: 10%;
+		width: 10%; 
 		display: inline;
 	}
-
-	#professional-experience {
-		align-content: center;
-		text-align: center;
-
-	}
-
-	#about-div {
-		width: 100%;
-		text-align: center;
-	}
-
-	.about-me {
-		width: 100%;
-	}
-
-	#img-div img {
-		height: 250px;
-		width: auto;
-	}
-	#exercise img, #overwatch img, #csgo img, #programming img {
-		height: 40px;
-		width: auto;
-	}
-
 	#exercise, #overwatch, #csgo, #programming {
 		width: 20%;
 		display: inline;
 		vertical-align: top;
 		margin: 10px;
 	}
-
-	#hobbies {
-		display: inline-block;
-		vertical-align: top;
-	}
-	#hobbies h4 {
-		font-weight: bold;
-	}
-	.about-me {
-		display: inline-block;
-	}
-
-	#projects-nav {
-		background-color: #68696b;
-		height: auto;
-	}
-
-	#projects-nav button {
-		margin: 5px;
-
-	}
-
-	#project-summary h1 {
-		text-align: center;
-	}
-
-	#project-summary {
-		background-color: #e4eee5;
-	}
-
-	#lsit {
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	}
-
-	#project-picture {
-		align-content: center;
-		text-align: center;
-	}
-
-	#project-picture ul {
-		padding: 0;
-	}
-
-	#tech-used, #what-I-learned {
-		margin-top: 25px;
-	}
-
-	#myImg:hover{
-	    color: #424242; 
-	  -webkit-transition: all .3s ease-in;
-	  -moz-transition: all .3s ease-in;
-	  -ms-transition: all .3s ease-in;
-	  -o-transition: all .3s ease-in;
-	  transition: all .3s ease-in;
-	  opacity: 1;
-	  transform: scale(2);
-	  -ms-transform: scale(.5); /* IE 9 */
-	  -webkit-transform: scale(2); /* Safari and Chrome */
-
-	}
-
-	#intangibles {
-		text-align: center;
-		width: 100%;
-		margin: 0;
-		display: inline-block;
-	}
-
 	.experience {
 		width: 25%;
 		display: inline;
 		vertical-align: top;
 	}
-
-	.experience img {
-		width: 40px;
-		height: auto;
-	}
-	
-	#tech-used li {
-		display: inline-block;
-		margin: 10px;
-	}
 }
+
+

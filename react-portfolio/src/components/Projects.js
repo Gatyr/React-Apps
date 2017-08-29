@@ -9,10 +9,6 @@ import Routing from './projects/Routing'
 import MERN from './projects/MERN'
 import NYTsearch from './projects/NYTsearch'
 
-var ProjectObjects = require("../utils/projects.js");
-
-
-
 class Projects extends Component {
 	render() {
 		return (

@@ -1,19 +1,14 @@
 import React, {Component} from 'react'
-import {Route, Link} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 import Home from './Home'
-import Projects from './Projects'
 
 class Main extends Component {
 	render() {
 		return (
 			<div id="main-div">
 				<nav className="navbar navbar-light">
-					<ul>
-						<li><Link to="/info/experience">About Me</Link></li>
-						<li><Link to="/projects">Completed Projects</Link></li>
-						<li>In Progress</li>
-					</ul>
+					<h3>Daniel Ertel-Moore</h3>
 				</nav>
 				<div id="main-content-div">
 					<Route path="/" component={Home} />

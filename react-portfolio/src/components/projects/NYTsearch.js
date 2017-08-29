@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import {BrowserRouter as Router, Link} from 'react-router-dom'
-
 import picDesc from '../../utils/projects'
 
 class NYTsearch extends Component {
