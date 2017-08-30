@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 
+import GifImages from './GifImages'
 import picDesc from '../../utils/projects'
 
 let btnArray = ["Futurama", "Breaking Bad", "Game of Thrones", "Westworld", "The Simpsons", "Pixar", "Disney", "Coffee", 
@@ -9,12 +10,16 @@ let btnArray = ["Futurama", "Breaking Bad", "Game of Thrones", "Westworld", "The
 class Giphy extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {src: 1, inputValue: ''}
-
+		this.state = {
+			src: 1, 
+			inputValue: '', 
+			buttons: btnArray, 
+			category: ''
+		}
 		this.handleClick = this.handleClick.bind(this);
 		this.renderButtons = this.renderButtons.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-		//this.handleChange = this.handleChange.bind(this);
+		this.handleCategorySelect = this.handleCategorySelect.bind(this);
 	}
 	handleClick(event) {
 		this.setState({src: event.target.value})
@@ -22,14 +27,23 @@ class Giphy extends Component {
 	renderButtons() {
 		return btnArray.map(function(item, i) {
 			let btnID = btnArray[i].replace(/\s+/g, "+");
-			return <button type='button' className="btn btn-info" key={i} id={btnID}>{btnArray[i]}</button>
-		})
+			return <button type='button' className="btn btn-info" onClick={this.handleCategorySelect} key={i} id={btnID} value={btnID}>{btnArray[i]}</button>
+		}, this)
+	}
+	renderGifs() {
+
+	}
+	handleCategorySelect(event) {
+		this.setState({category: event.target.value});
 	}
 	handleSubmit(event) {
 		event.preventDefault();
 
 		var newCategory = this.state.inputValue;
 		console.log(newCategory);
+		btnArray.push(newCategory);
+		console.log(btnArray);
+		this.setState({buttons: btnArray});
 	}
 	updateInputValue(evt) {
 		this.setState({
@@ -90,6 +104,9 @@ class Giphy extends Component {
 						</form>
 						<button className="btn btn-info" onClick={this.handleSubmit}>Submit</button>
 					</div>
+					<div id="gif-div">
+						<GifImages category={this.state.category}/>
+					</div>
 				</div>
 			</div>
 		)
@@ -99,18 +116,29 @@ class Giphy extends Component {
 export default Giphy
 
 /*
-Problem I was having:
+Problem(s) I was having:
 
-input for new button field wasn't updating state on submit
+1) input for new button field wasn't updating state on submit
 
-How I fixed the problem:
+	How I fixed the problem:
 
-1 - set a value tag equal to this.state.inputValue 
-2 - created a method to set the state equal to the value
-3 - set an onChange tag that passes a parameter to the updateInputValue method
+	1 - set a value tag equal to this.state.inputValue 
+	2 - created a method to set the state equal to the value
+	3 - set an onChange tag that passes a parameter to the updateInputValue method
+
+2) passing state to child component
+	
+	How I fixed it:
+
+	1 - render component in div
+	2 - set desired state key equal to this.state.*desired state key here*
+	3 - this passes the state to the child component as a prop
+
 
 to do: 
 	take new inputValue state, find a way to render a new button
+
+		new component for giphy app; 
 
 	detect a button category click and call on the giphy API for 10 .gifs related to the category,
 	and render those gifs in a div below
