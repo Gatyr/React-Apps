@@ -1,7 +1,7 @@
 //known bugs:
 	//displayGIFs() button click only accepts one click event before working
 
-$(document).ready(function() {
+/*$(document).ready(function() {
 
 	console.log("script loaded");
 	var buttonArray = ["Futurama", "Breaking Bad", "Game of Thrones", 
@@ -68,4 +68,10 @@ $(document).ready(function() {
 	}
 	displayButtons();
 	displayGIFs();
-})
+
+*/
+var giphyURL = "http://api.giphy.com/v1/gifs/search?q=futurama&api_key=dc6zaTOxFJmzC";
+
+ajax({ url: giphyURL, method: "GET"}).done(function(res) {
+	console.dir(res);
+});

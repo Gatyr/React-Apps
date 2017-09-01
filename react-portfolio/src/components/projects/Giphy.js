@@ -4,7 +4,7 @@ import GifImages from './GifImages'
 import picDesc from '../../utils/projects'
 
 let btnArray = ["Futurama", "Breaking Bad", "Game of Thrones", "Westworld", "The Simpsons", "Pixar", "Disney", "Coffee", 
-		"Jurassic Park", "James Bond", "Watchmen", "Donald Trump", "The Endocrine System", "No Results", "Topic for which no GIFs exist", 
+		"Jurassic Park", "James Bond", "Watchmen", "The Endocrine System", "No Results", "Topic for which no GIFs exist", 
 		"Tumblr Gifs"];
 
 class Giphy extends Component {
@@ -104,7 +104,7 @@ class Giphy extends Component {
 						</form>
 						<button className="btn btn-info" onClick={this.handleSubmit}>Submit</button>
 					</div>
-					<div id="gif-div">
+					<div id="gif-component">
 						<GifImages category={this.state.category}/>
 					</div>
 				</div>
