@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import GifImages from './GifImages'
-import picDesc from '../../utils/projects'
+import picDesc from '../../../utils/projects'
 
 let btnArray = ["Futurama", "Breaking Bad", "Game of Thrones", "Westworld", "The Simpsons", "Pixar", "Disney", "Coffee", 
 		"Jurassic Park", "James Bond", "Watchmen", "The Endocrine System", "No Results", "Topic for which no GIFs exist", 
@@ -89,7 +89,7 @@ class Giphy extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="container" id="giphy-dem">
+				<div className="container demo" id="giphy-demo">
 					<h3>This is a demonstration of the app</h3>
 					<p>I originally developed the app to gain an understanding of how to use an API, manipulate the DOM with jQuery, and 
 					integrate Boostrap in my design. My github repo for the app will still reflect my learning, but this demonstration will

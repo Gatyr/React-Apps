@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import picDesc from '../../utils/projects'
+import picDesc from '../../../utils/projects'
 
 class Mongo extends Component {
 	constructor(props) {

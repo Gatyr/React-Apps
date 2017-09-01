@@ -2,12 +2,12 @@ import React, {Component} from 'react'
 import {Route, Link} from 'react-router-dom'
 
 import Train from './projects/Train'
-import Giphy from './projects/Giphy'
+import Giphy from './projects/Giphy/Giphy'
 import MySQL from './projects/MySQL'
-import Mongo from './projects/Mongo'
+import Mongo from './projects/Mongo/Mongo'
 import Routing from './projects/Routing'
-import MERN from './projects/MERN'
-import NYTsearch from './projects/NYTsearch'
+import MERN from './projects/MERN/MERN'
+import NYTsearch from './projects/NYTsearch/NYTsearchApp'
 
 class Projects extends Component {
 	render() {

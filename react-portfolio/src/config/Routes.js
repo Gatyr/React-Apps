@@ -9,8 +9,8 @@ import Home from '../components/Home'
 //import Resume from '../components/about/Resume'
 
 import Projects from '../components/Projects'
-import Giphy from '../components/projects/Giphy'
-import Train from '../components/projects/Train'
+// import Giphy from '../components/projects/Giphy'
+// import Train from '../components/projects/Train'
 
 class Routes extends Component {
 	render() {
@@ -22,10 +22,7 @@ class Routes extends Component {
 									<Route path='/' component={Home} />
 									<Route path='info/about' component={About} />
 									<Route path='info/experience' component={Experience} />
-									<Route path='/projects' component={Projects} />
-									<Route path='/projects/giphy' component={Giphy} />
-									<Route path='/projects/train' component={Train} />
-								
+									<Route path='/projects' component={Projects} />								
 						</Route>
 				</Router>
 			</div>

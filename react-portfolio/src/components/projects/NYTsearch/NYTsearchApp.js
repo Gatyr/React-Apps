@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
-import picDesc from '../../utils/projects'
+import picDesc from '../../../utils/projects'
+
+import NYTmain from './NYTmain'
 
 class NYTsearch extends Component {
 	constructor(props) {
@@ -51,6 +53,9 @@ class NYTsearch extends Component {
 							<li>State and prop usage, as well as properly setting the state", "Event handling and, specifically, handling user text input when using that data for API or backend calls</li>
 						</ul>
 					</div>
+				</div>
+				<div className="container demo" id="NYTsearch-demo">
+					<NYTmain />
 				</div>
 			</div>
 		)
