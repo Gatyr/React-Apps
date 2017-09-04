@@ -4,6 +4,14 @@ body {
 		font-family: sans-serif;
 		min-height: 100%;
 	}
+	#NYTsearch-demo {
+		padding-left: 0px;
+	}
+	#NYTjumbotron {
+		height: 200px;
+		background-color: white;
+		background-image: none;
+	}
 
 	.navbar {
 		background-color: #39444a;
@@ -234,7 +242,7 @@ body {
 		float: left; 
 	}
 
-#giphy-dem button {
+#giphy-demo button {
 	margin-bottom: 10px;
 	margin-right: 10px;
 }

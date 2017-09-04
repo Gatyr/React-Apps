@@ -54,6 +54,13 @@ class NYTsearch extends Component {
 						</ul>
 					</div>
 				</div>
+				<br/>
+				<div className="container" id="preface">
+					<h4>This is a limited demonstration of the app</h4>
+					<p>I originally built the app in order to integrate a React app and a MongoDB backend, but I haven't built that functionality into this page because I haven't yet learned how to deploy a secure backend. 
+					I invite you to checkout my Github repo if you would like more information on how I built a backend for the app to run locally.</p>
+				</div>
+				<br/>
 				<div className="container demo" id="NYTsearch-demo">
 					<NYTmain />
 				</div>

@@ -13,8 +13,9 @@ class GifImages extends Component {
 		let giphyURL = "http://api.giphy.com/v1/gifs/search?q=" + subject + "&api_key=dc6zaTOxFJmzC";
 		let rawUrlArray = [];
 		let splitUrlArray = [];
+		let test;
 
-		const haveSubject = new Promise(
+		/*const haveSubject = new Promise(
 			(resolve, reject) => {
 				if (subject) {
 					const message = "You have a subject, proceeding with process"
@@ -26,51 +27,80 @@ class GifImages extends Component {
 			}
 		)
 
-		const getURLs = function() {
+		function getURLs() {
+			//grab results from Giphy API
 			axios.get(giphyURL).then(function(results){
 				for (let i=0; i<results.data.data.length; i++) {
 					rawUrlArray.push(results.data.data[i].images.fixed_height_small_still.url);
 				}
-			})
+			});
+			//logs everything as expected
+			console.log(rawUrlArray);
 			return Promise.resolve(rawUrlArray);
 		}
 
 		const splitURLs = function() {
-			console.log(typeof(rawUrlArray)); //object? why the fuck is it an object?
-			let temp = [];
+			//for each index in rawUrlArray
+			console.log(rawUrlArray); //logs as expected, but not immediately
 			for (let p=0; p<rawUrlArray.length; p++) {
-				temp = rawUrlArray[p].split("");
-				splitUrlArray.push(temp);
+				//go through each index in the string
+				console.log(rawUrlArray[p]); //doesn't log anything
+				for (let t=0; t<rawUrlArray[p].length; t++) {
+					//find the index after .gif
+					if ((rawUrlArray[p][t-3] === "g") && (rawUrlArray[p][t-2] === "i") && (rawUrlArray[p][t-1] === "f")) {
+						//remove everything after gif
+						rawUrlArray[p].splice(t, rawUrlArray[p].length - t);
+						//and push the string into a different array
+						splitUrlArray.push(rawUrlArray[p]);
+					}
+				}
 			}
-			return Promise.resolve(splitUrlArray);
-		}
-
-		const refineURLs = function() {
+			//doesn't log anything
 			console.log(splitUrlArray);
-
+			return Promise.resolve(splitUrlArray);
 		}
 
 		const puttingItAllTogether = function() {
 			haveSubject
 				.then(getURLs)
 				.then(splitURLs)
-				.then(refineURLs)
 				.then(fulfilled => console.log("You did it"))
-				.catch(error => console.log(error.message));
+				.catch(error => console.log(error));
 		}
 
-		puttingItAllTogether();
-
+		puttingItAllTogether();*/
 		
+		axios.get(giphyURL).then(function(results){
+				for (let i=0; i<results.data.data.length; i++) {
+					rawUrlArray.push(results.data.data[i].images.fixed_height_small_still.url);
+				}
+				return rawUrlArray
+			}).then(function(results1) {
+				for (let p=0; p<rawUrlArray.length; p++) {
+					let temp = rawUrlArray[p];
+					for (let t=0; t<temp.length; t++) {
+						//find the index after .gif
+						if ((temp[t-3] === "g") && (temp[t-2] === "i") && (temp[t-1] === "f")) {
+							//remove everything after gif
+							let temp2 = temp.slice(0, t);
+							console.log(temp2);
+							//and push the string into a different array
+							splitUrlArray.push(temp2);
+							break
+						}
+					}
+				}
+				//console.log(splitUrlArray);
+				return splitUrlArray;
+			});
 	}
-	renderGifs() {
+	renderGifs() {	
 		this.retrieveURLs();
 	}
 	render() {
 		return(
 			<div id="gif-div">
 				{this.renderGifs()}
-				<img src="https://media3.giphy.com/media/yEXPAGIytvqNy/100_s.gif" alt="" />
 			</div>
 		)
 	}
@@ -79,85 +109,6 @@ class GifImages extends Component {
 export default GifImages
 
 /*
-Maybe: 
-
-set method to get img urls, and another to render them
 
 
-create promise
-
-const doIHaveUrls
-	resolve/reject => {
-		if (data) {
-			const URLarray = 
-			resolve URLarray;
-		} else {
-			const reason = new Error("blah");
-		}
-	}
-const doSomethingWithUrls = function(array) {
-	const blahhdfsd = array.map(item, i) {
-		console.log("img src='" + array[i] + "' alt=''");
-	}
-}
-
-const URLrunner = function() {
-	doIHaveUrls
-		.then(dosomethingwithurls)
-		.then(fulfilled => console.log(fullfilled))
-		.catch(error => console.log(error.message));
-}
-
-		// const trimURLs = function() {
-		// 	let newArray = [];
-		// 	for (let i=0; i<rawUrlArray.length; i++) {
-		// 		let gifUrl = rawUrlArray[i];
-		// 		let splitURL = gifUrl.split("");
-		// 		for (let p=0; p<splitURL.length; p++) {
-		// 		 	if ((splitURL[p-3] === "g") && (splitURL[p-2] === "i") && (splitURL[p-1] === "f")) {
-		// 		 		splitURL.splice(p, splitURL.length - p);
-		// 		 		gifUrl = splitURL.join("");
-				 		
-		// 		 		newArray.push(gifUrl);
-		// 		 	}
-		// 		}
-		// 	}
-
-		// 	return Promise.resolve(console.log(newArray));
-		// }
 */
-
-/*
-		const willIHaveURLs = new Promise(
-			(resolve, reject) => {
-				if (URLset) { //URLset here is a boolean to test whether or not the axios get retrieved anything
-					const URLs = results.data.data //set new const equal to array of urls
-					resolve(URLs); 
-				} else {
-					const reason = new Error('no URLs to work with');
-					reject(reason);
-				}
-			}
-		)
-
-		const trimURLs = function(array) {
-		*/	
-
-		/*
-		let test = axios.get(giphyURL).then(function(results) {
-			if (results.data.data[0]) {
-				imgUrls = results.data.data.map(function(item, i) {
-					let gifUrl = item.images.fixed_height_small_still.url;
-					let urlSplit = gifUrl.split("");
-					for (let p=0; p<urlSplit.length; p++) {
-						if ((urlSplit[p-3] === "g") && (urlSplit[p-2] === "i") && (urlSplit[p-1] === "f")) {
-							urlSplit.splice(p, urlSplit.length - p);
-							gifUrl = urlSplit.join("");
-							return gifUrl
-						}
-					}
-					return imgUrls;
-				})
-			}
-		})
-		console.log(test);*/
