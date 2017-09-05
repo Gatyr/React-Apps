@@ -3,9 +3,8 @@ import React, {Component} from 'react'
 import GifImages from './GifImages'
 import picDesc from '../../../utils/projects'
 
-let btnArray = ["Futurama", "Breaking Bad", "Game of Thrones", "Westworld", "The Simpsons", "Pixar", "Disney", "Coffee", 
-		"Jurassic Park", "James Bond", "Watchmen", "The Endocrine System", "No Results", "Topic for which no GIFs exist", 
-		"Tumblr Gifs"];
+let btnArray = ["Futurama", "Overwatch", "King of the Hill", "Football", "The Simpsons", "Pixar", "Disney", "Coffee", 
+		"Jurassic Park", "James Bond", "Batman", "The Endocrine System", "No Results"];
 
 class Giphy extends Component {
 	constructor(props) {
@@ -29,9 +28,6 @@ class Giphy extends Component {
 			let btnID = btnArray[i].replace(/\s+/g, "+");
 			return <button type='button' className="btn btn-info" onClick={this.handleCategorySelect} key={i} id={btnID} value={btnID}>{btnArray[i]}</button>
 		}, this)
-	}
-	renderGifs() {
-
 	}
 	handleCategorySelect(event) {
 		this.setState({category: event.target.value});
