@@ -89,7 +89,7 @@ class Giphy extends Component {
 					<h3>This is a demonstration of the app</h3>
 					<p>I originally developed the app to gain an understanding of how to use an API, manipulate the DOM with jQuery, and 
 					integrate Boostrap in my design. My github repo for the app will still reflect my learning, but this demonstration will
-					rely on my understanding of React in order to achieve the same working model.</p>
+					rely on my understanding of React in order to achieve the same working model. Depending on your connection speed, this may take a while.</p>
 					<div id="buttons-div">
 						{this.renderButtons()}
 					</div>

@@ -28,7 +28,7 @@ export class Main extends Component {
 						  	</div>
 
 						  	<div className="collapse navbar-collapse navbar-ex1-collapse">
-								<ul className="nav navbar-nav navbar-right">
+								<ul className="navbar-nav navbar-right">
 
 							  		<li><Link to="/projects/nytsearch/search">Search</Link></li>
 							  		<li><Link to="/projects/nytsearch/saved">Saved Articles</Link></li>

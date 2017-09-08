@@ -12,14 +12,14 @@ class GifImages extends Component {
 	}
 	retrieveURLs() {
 		let subject = this.props.category;
-		let giphyURL = "http://api.giphy.com/v1/gifs/search?q=" + subject + "&api_key=dc6zaTOxFJmzC";
+		let giphyURL = "https://api.giphy.com/v1/gifs/search?q=" + subject + "&api_key=dc6zaTOxFJmzC";
 		let rawUrlArray = [];
 		let splitUrlArray = [];
 		
 		let test = axios.get(giphyURL).then(function(results){
 			//console.log(results);
-			for (let i=0; i<results.data.data.length; i++) {
-				rawUrlArray.push(results.data.data[i].images.fixed_height_small_still.url);
+			for (let i=0; i<results.data.data.length-15; i++) {
+				rawUrlArray.push(results.data.data[i].images.fixed_height.url);
 			}
 			return rawUrlArray
 			}).then(function(results1) {
@@ -64,6 +64,10 @@ class GifImages extends Component {
 export default GifImages
 
 /*
+  $ yarn install
+remote:        $ git add yarn.lock
+remote:        $ git commit -m "Updated Yarn lockfile"
+remote:        $ git push heroku master
 
 
 */
