@@ -21,10 +21,10 @@ class Home extends Component {
 					</div>
 					<div id='jumbotron-footer'>
 						<ul>	
-							<li><Link to="/info/experience">My information</Link></li>
-							<li><Link to="/info/about">About me</Link></li>
-							<li><Link to='/projects'>Completed Projects</Link></li>
-							<li><Link to='/tutorials'>Tutorials</Link></li>
+							<li><Link to="/info/experience"><button id="jumbo-btn">My information</button></Link></li>
+							<li><Link to="/info/about"><button id="jumbo-btn">About me</button></Link></li>
+							<li><Link to='/projects'><button id="jumbo-btn">Completed Projects</button></Link></li>
+							<li><Link to='/tutorials'><button id="jumbo-btn">Tutorials</button></Link></li>
 						</ul>
 					</div>
 				</div>

@@ -14,14 +14,13 @@ class Main extends Component {
 					<div id="main-content-div">
 						<Route path="/" component={Home} />
 					</div>
-					
-				</div>
-				<div className="footer" id="main-footer">
+					<div className="footer" id="main-footer">
 					<ul>
 						<li><a href="https://www.linkedin.com/in/daniel-ertel-moore-79ab2294/" alt=""><img src="../../logos/linkedin.png" alt=""/></a></li>
 						<li><a href="https://www.github.com/gatyr" alt=""><img src="../../logos/githubwrong.png" alt=""/></a></li>
 					</ul>
 					<p>danielertelmoore@gmail.com</p>
+					</div>
 				</div>
 			</div>
 		)

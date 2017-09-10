@@ -46,7 +46,6 @@ body {
 	}
 
 	#main-footer {
-
 		bottom: 0;
 		width: 100%;
 		height: 120px;
@@ -83,7 +82,7 @@ body {
 	.jumbotron {
 		align-content: center;
 		font-weight: 800;
-		height: 300px;
+		height: 350px;
 		background-image: url("./images/soccer.jpg");
 		background-position: center;
 		background-size: cover;
@@ -113,18 +112,9 @@ body {
 		position: absolute;
 		top: 300px;
 		width: 100%;
+		height: 100px;
 	}
 
-	#project-picture li {
-		display: inline-block;
-	}
-
-	#jumbotron-footer a {
-		padding: 10px;
-		background-color: #39444a;
-		border-radius: 5px;
-		margin-left: 5px;
-	}
 
 	#technologies {
 		align-content: center;
@@ -281,7 +271,6 @@ body {
 }
 
 #main-div {
-	padding: 0 0 120px;
 	position: relative;
 	height: 100%;
 	box-sizing: border-box;
@@ -309,10 +298,58 @@ body {
 .container h1 {
 	height: auto;
 }
-
-div data-reactroot {
-	height: 100%;
+.tutorial-main {
+	margin: 0;
 }
+.tutorial-main a {
+	color: #009b72;
+	font-weight: 600;
+}
+#jumbo-btn {
+	background-color: #39444a;
+	border-radius: 5px;
+	border-width: 0;
+	padding: 10px;
+}
+#jumbotron-footer ul {
+	margin-top: 20px;
+}
+#React-Tutorial-Main {
+	width: 100%;
+}
+.tutorial-links, .tutorial-component {
+	margin-top: 20px;
+}
+.tutorial-component {
+	color: black;
+}
+.jsx-element {
+	background-color: #ebebeb;
+	border-radius: 5px;
+}
+.code {
+	background-color: #bcc295;
+	border-radius: 3px;
+	width: 70%;
+	margin-left: 20px;
+	margin-bottom: 10px;
+
+}
+.jsx-element p {
+	margin-left: 10px;
+}
+
+.jsx-element img {
+	margin-left: 20px;
+}
+
+/*
+-------------------------------------------------------------
+-------------------------------------------------------------
+-------------------------------------------------------------
+*/
+
+
 @media (min-width: 1000px) {
 	.img-div {
 		width: 10%;
@@ -334,9 +371,7 @@ div data-reactroot {
 	.gif-holder {
 		display: inline-block;
 	}
-	#jumbotron-footer li {
-		display: inline-block;
-	}
+
 	#MongoDB-link {
 		height: 100px;
 		width: 64%;
@@ -349,11 +384,45 @@ div data-reactroot {
 		margin: 1%;
 		vertical-align: top;
 	}
-
+	#jumbotron-footer li {
+		display: inline-block;
+	}
+	#jumbotron-footer {
+		margin-top: 30px;
+	}
+	#jumbo-btn {
+		margin-right: 10px;
+	}
+	#React-Tutorial-Main {
+		display: inline-block;
+	}
+	.tutorial-links {
+		width: 20%;
+		height: auto;
+		float: left;
+	}
+	.tutorial-component {
+		width: 80%;
+		float: left;
+	}
+	.jsx-element {
+		width: 90%;
+	}
+	.jsx-element p {
+		width: auto;
+	}
 }
 
+#outer-div {
+	height: 100%;
+}
 
-@media (max-width: 999px) {
+/*
+-------------------------------------------------------------
+-------------------------------------------------------------
+-------------------------------------------------------------
+*/
+@media (max-width: 999px) and (min-width: 530px) {
 	.img-div {
 		width: 10%; 
 		display: inline;
@@ -373,13 +442,15 @@ div data-reactroot {
 		display: inline;
 		margin-bottom: 20px;
 	}
+	
+	#jumbotron-footer {
+		height: 100px;
+		margin-top: 30px;
+	}
 
 	#jumbotron-footer li {
 		display: inline;
-		margin-bottom: 10px;
-	}
-	#jumbotron-footer {
-		height: 100px;
+		margin-top: 30px;
 	}
 	
 	.tutorial-link {
@@ -388,5 +459,44 @@ div data-reactroot {
 		margin-right: 12%;
 		margin-left: 12%; 
 	}
+	.tutorial-links p {
+		display: inline;
+		margin-right: 10px;
+		margin-bottom: 5px;
+	}
+	#jumbo-btn {
+		margin-right: 10px;
+	}
+	.jsx-element {
+		width: 100%;
+	}
 	
+}
+/*
+-------------------------------------------------------------
+-------------------------------------------------------------
+-------------------------------------------------------------
+*/
+@media (max-width: 529px) {
+	.jumbotron {
+		height: 550px;
+
+	}
+	#jumbo-btn {
+		margin-bottom: 10px;
+		width: 170px;
+	}
+	.jumbotron li {
+		display: block;
+	}
+	#jumbotron-footer {
+		margin-top: 60px;
+	}
+	.tutorial-links p {
+		display: inline;
+		margin-right: 20px;
+	}
+	.jsx-element {
+		width: 100%;
+	}
 }

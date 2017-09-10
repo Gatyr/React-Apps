@@ -13,7 +13,7 @@ class Tutorials extends Component {
 							<p>There is no shortage of material online with which one can learn JavaScript. To be sure, anyone coming to my page
 							in order to learn it would be sorely disappointed by my lack of expertise and thoroughness.</p>
 							<p>However, with all of the resources available, there have been updates to ECMA standards, and most resources from before
-							2015 will not have been updated to reflect these revisions. This is my attempt to aggregate and contextualize the new utility
+							2015 will not have been updated to reflect these revisions. This is my humble attempt to aggregate and contextualize the new utility
 							provided by these updates</p>
 						</div>
 					</div></Link>
