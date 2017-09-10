@@ -323,7 +323,7 @@ body {
 .tutorial-component {
 	color: black;
 }
-.jsx-element {
+.tutorial-section-div {
 	background-color: #ebebeb;
 	border-radius: 5px;
 }
@@ -335,12 +335,15 @@ body {
 	margin-bottom: 10px;
 
 }
-.jsx-element p {
+.tutorial-section-div p {
 	margin-left: 10px;
 }
 
-.jsx-element img {
+.tutorial-section-div img {
 	margin-left: 20px;
+}
+.component-holder {
+	height: 100%;
 }
 
 /*
@@ -396,19 +399,24 @@ body {
 	#React-Tutorial-Main {
 		display: inline-block;
 	}
+	.tutorial-main {
+		height: 100%;
+	}
 	.tutorial-links {
 		width: 20%;
-		height: auto;
+		height: 100%;
 		float: left;
 	}
 	.tutorial-component {
 		width: 80%;
 		float: left;
+		border-left: 2px dashed #778512;
+		padding-left: 10px;
 	}
-	.jsx-element {
+	.tutorial-section-div {
 		width: 90%;
 	}
-	.jsx-element p {
+	.tutorial-section-div p {
 		width: auto;
 	}
 }
@@ -467,7 +475,7 @@ body {
 	#jumbo-btn {
 		margin-right: 10px;
 	}
-	.jsx-element {
+	.tutorial-section-div {
 		width: 100%;
 	}
 	
@@ -496,7 +504,7 @@ body {
 		display: inline;
 		margin-right: 20px;
 	}
-	.jsx-element {
+	.tutorial-section-div {
 		width: 100%;
 	}
 }

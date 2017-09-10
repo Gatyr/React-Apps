@@ -8,4 +8,4 @@ class RemoveData extends Component {
 	}
 }
 
-export default RemoveData
+export default RemoveData 
