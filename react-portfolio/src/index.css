@@ -53,6 +53,7 @@ body {
 		align-content: center;
 		text-align: center;
 		left: 0; 
+		position: absolute;
 	}
 
 	#main-footer li {
@@ -274,6 +275,7 @@ body {
 	position: relative;
 	height: 100%;
 	box-sizing: border-box;
+	padding-bottom: 120px;
 }
 
 #ECMAscript-link{
@@ -422,7 +424,8 @@ body {
 }
 
 #outer-div {
-	height: 100%;
+	min-height: 100%;
+	position: relative;
 }
 
 /*
