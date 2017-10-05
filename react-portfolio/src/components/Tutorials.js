@@ -7,6 +7,7 @@ class Tutorials extends Component {
 			<div id="tutorials-main">
 				<div id="tutorials-upper">
 					<h2>Explore my very own abreviated explanation of:</h2>
+					<p>(Really, these are my attempts to aggregate the useful parts of the documentation provided for my own benefit, so why not share my understanding of what I learn?)</p>
 					<Link to="/ecmascript"><div className="tutorial-link" id="ECMAscript-link">
 						<h4>ECMA Script</h4>
 						<div className="link-description">
@@ -22,6 +23,7 @@ class Tutorials extends Component {
 						<div className="link-description">
 							<p>To be brief, PostgreSQL is going to be my preferred database management system using Structured Query Language. I'm choosing it because, 
 							in the absense of a meaningful reason to do otherwise, I prefer open-source technologies</p>
+							<p>This will be my condensed notes that I will reference when working on apps</p>
 						</div>
 					</div></Link>
 					<Link to="react"><div className="tutorial-link" id="React-link">

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import picDesc from '../../../utils/projects'
+//import picDesc from '../../../utils/projects'
 
 import NYTmain from './NYTmain'
 
@@ -21,36 +21,30 @@ class NYTsearch extends Component {
 					<div className="col-md-3" id="tech-used">
 						<h4>What I used:</h4>
 						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Bootstrap</li>
-							<li>JavaScript</li>
-							<li>jQuery</li>
-							<li>Node.js</li>
-							<li>Express</li>
-							<li>Mongoose</li>
-							<li>React</li>
-							<li>NYT API</li>
+							<li><img src="/logos/HTML5.png" alt="" /></li>
+							<li><img src="/logos/CSS.png" alt="" /></li>
+							<li><img src="/logos/javascript.png" alt="" /></li>
+							<li><img src="/logos/jquery.gif" alt="" /></li>
+							<li><img src="/logos/mongoose.png" alt="" /></li>
+							<li><img src="/logos/expressjs.png" alt="" /></li>
+							<li><img src="/logos/mongodb.png" alt="" /></li>
+							<li><img src="/logos/bootstrap.png" alt="" /></li>	
+							<li><img src="/logos/react.png"  alt="" /></li>
+							<li><img src="/logos/nytapi.png"  alt="" /></li>
 						</ul>
 					</div>
 					<div className="col-md-6" id="project-picture">
-						<div className="img-link-btns">
-							<button className="btn btn-link" onClick={this.handleClick} value="1">1</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="2">2</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="3">3</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="4">4</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="5">5</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="6">6</button>
-						</div>
-						<img id="myImg" src={"/project-images/NYTsearchReact/nytsearch"+ this.state.src + ".png"} alt="" width="500" height="266"/>
-						<p>{picDesc.nytsearch[this.state.src - 1]}</p>
+						<iframe title="NYTsearchApp" src="https://player.vimeo.com/video/233887843" width="640" height="359" frameBorder="0" allowFullScreen></iframe> <p><a href="https://vimeo.com/233887843">NYT-mern-app</a> from <a href="https://vimeo.com/user791506">Gatyr</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 					</div>
 					<div className="col-md-3" id="what-I-learned">
-						<h4>What I learned:</h4>
+						<h4>What's going on behind the scenes:</h4>
 						<ul>
-							<li>Setting up a database with a React app is more difficult than I expected</li>
-							<li>React lexical scoping and properly binding 'this' in the constructor</li>
-							<li>State and prop usage, as well as properly setting the state", "Event handling and, specifically, handling user text input when using that data for API or backend calls</li>
+							<li>Separate the app into a front-end directory and a back-end directory</li>
+							<li>Inside the front-end directory, we set our Routes so that React knows which component to render depending
+							on location, as well as a utility .js file for get, post, and delete calls on our API</li>
+							<li>I also have my components created here, with methods to set the state according to user input and render accordingly</li>
+							<li>On the backend, I've got my Mongoose schema model created so each saved article has the same schema when submitted to the DB</li>
+							<li>I also have my server setup file and my routes file so the server knows what to do with the information it is given</li>
 						</ul>
 					</div>
 				</div>

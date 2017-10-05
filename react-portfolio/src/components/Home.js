@@ -9,6 +9,11 @@ import ECMAscript  from './tutorials/ECMAscript/ECMAscript'
 import PostgreSQL from './tutorials/PostgreSQL/PostgreSQL'
 import ReactTutorial from './tutorials/ReactTutorial/ReactTutorial'
 import MongoDB from './tutorials/MongoDB/MongoDB'
+import Train from './projects/Train'
+import Giphy from './projects/Giphy/Giphy'
+import MySQL from './projects/MySQL'
+import Mongo from './projects/Mongo/Mongo'
+import NYTsearch from './projects/NYTsearch/NYTsearchApp'
 
 class Home extends Component {
 	render() {
@@ -24,7 +29,7 @@ class Home extends Component {
 							<li><Link to="/info/experience"><button id="jumbo-btn">My information</button></Link></li>
 							<li><Link to="/info/about"><button id="jumbo-btn">About me</button></Link></li>
 							<li><Link to='/projects'><button id="jumbo-btn">Completed Projects</button></Link></li>
-							<li><Link to='/tutorials'><button id="jumbo-btn">Tutorials</button></Link></li>
+							{/*<li><Link to='/tutorials'><button id="jumbo-btn">Tutorials</button></Link></li>*/}
 						</ul>
 					</div>
 				</div>
@@ -37,6 +42,11 @@ class Home extends Component {
 					<Route path="/postgresql" component={PostgreSQL}/>
 					<Route path="/react" component={ReactTutorial}/>
 					<Route path="/mongodb" component={MongoDB}/>
+					<Route path="/giphy" component={Giphy} />
+					<Route path="/train" component={Train} />
+					<Route path="/mysql" component={MySQL} />
+					<Route path="/mongo" component={Mongo} />
+					<Route path="/nytsearch" component={NYTsearch} />
 				</div>
 			</div>
 		)

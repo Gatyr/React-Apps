@@ -30,8 +30,8 @@ export class Main extends Component {
 						  	<div className="collapse navbar-collapse navbar-ex1-collapse">
 								<ul className="navbar-nav navbar-right">
 
-							  		<li><Link to="/projects/nytsearch/search">Search</Link></li>
-							  		<li><Link to="/projects/nytsearch/saved">Saved Articles</Link></li>
+							  		<li><Link to="/nytsearch/search">Search</Link></li>
+							  		<li><Link to="/nytsearch/saved">Saved Articles</Link></li>
 								</ul>
 						  	</div>
 						</div>
@@ -42,8 +42,8 @@ export class Main extends Component {
 						<h3 className="text-center">Search for and save articles of interest.</h3>
 					</div>
 
-					<Route path="/projects/nytsearch/saved" component={Saved}/>
-					<Route path="/projects/nytsearch/search" component={Search}/>
+					<Route path="/nytsearch/saved" component={Saved}/>
+					<Route path="/nytsearch/search" component={Search}/>
 
 					<footer>
 						<hr />

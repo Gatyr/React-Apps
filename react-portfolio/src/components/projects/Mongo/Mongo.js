@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import picDesc from '../../../utils/projects'
+//import picDesc from '../../../utils/projects'
 
 class Mongo extends Component {
 	constructor(props) {
@@ -19,28 +19,18 @@ class Mongo extends Component {
 					<div className="col-md-3" id="tech-used">
 						<h4>What I used:</h4>
 						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Bootstrap</li>
-							<li>JavaScript</li>
-							<li>jQuery</li>
-							<li>Node.js</li>
-							<li>Express</li>
-							<li>Mongoose</li>
-							<li>Handlebars Web Template System</li>
+							<li><img src="/logos/HTML5.png" alt="" /></li>
+							<li><img src="/logos/CSS.png" alt=""/></li>
+							<li><img src="/logos/javascript.png" alt=""/></li>
+							<li><img src="/logos/jquery.gif" alt=""/></li>
+							<li><img src="/logos/mongoose.png" alt=""/></li>
+							<li><img src="/logos/expressjs.png" alt=""/></li>
+							<li><img src="/logos/mongodb.png" alt=""/></li>
+							<li><img src="/logos/bootstrap.png" alt=""/></li>		
 						</ul>
 					</div>
 					<div className="col-md-6" id="project-picture">
-						<div className="img-link-btns">
-							<button className="btn btn-link" onClick={this.handleClick} value="1">1</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="2">2</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="3">3</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="4">4</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="5">5</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="6">6</button>
-						</div>
-						<img id="myImg" src={"/project-images/MongoScraper/mongoscraper"+ this.state.src + ".png"} alt="" width="500" height="266"/>
-						<p>{picDesc.mongo[this.state.src - 1]}</p>
+						<iframe title="MongoWebScraper" src="https://player.vimeo.com/video/233887906" width="640" height="299" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/233887906">web-scraper</a> from <a href="https://vimeo.com/user791506">Gatyr</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 					</div>
 					<div className="col-md-3" id="what-I-learned">
 						<h4>What I learned:</h4>

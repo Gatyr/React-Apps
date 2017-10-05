@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
 
 class Experience extends Component {
 	render() {
@@ -20,9 +19,9 @@ class Experience extends Component {
 				</div>
 				<div className="container" id="professional-experience">
 					<h2>Professional Experience:</h2>
-					<p><Link to="/resume">View My Resume</Link></p>
 					<p><a href="https://www.github.com/gatyr">View my Github</a></p>
 				</div>
+				<div className="page-break" id="experience-page-break"></div>
 				<div className="container" id="intangibles">
 					<h2>What my resume and Github repository won't tell you:</h2>
 					<div className="experience">

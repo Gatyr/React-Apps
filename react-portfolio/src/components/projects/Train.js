@@ -20,12 +20,13 @@ class Train extends Component {
 					<div className="col-md-3" id="tech-used">
 						<h4>What I used:</h4>
 						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Bootstrap</li>
-							<li>JavaScript</li>
-							<li>jQuery</li>
-							<li>Firebase</li>
+							<li><img src="/logos/HTML5.png" alt="" /></li>
+							<li><img src="/logos/CSS.png" alt="" /></li>
+							<li><img src="/logos/javascript.png" alt="" /></li>
+							<li><img src="/logos/jquery.gif" alt="" /></li>
+							<li><img src="/logos/bootstrap.png" alt="" /></li>
+							<li><img src="/logos/giphy.gif" alt="" /></li>
+							<li><img src="/logos/firebase.png" alt="" /></li>
 						</ul>
 					</div>
 					<div className="col-md-6" id="project-picture">
@@ -38,10 +39,13 @@ class Train extends Component {
 						<p>{picDesc.train[this.state.src - 1]}</p>
 					</div>
 					<div className="col-md-3" id="what-I-learned">
-						<h4>What I learned:</h4>
+						<h4>What's going on with the app</h4>
 						<ul>
-							<li>The value of JS libraries and Moment.js</li>
-							<li>How to make use of a database</li>
+							<li>First I created an object constructor for the trains. This involved setting a few attributes about the train, 
+							and creating a few methods to correctly calculate and display things involving time. Moment.js was invaluable here.</li>
+							<li>After that was setup, I made a jQuery function to display the trains and their information on the page</li>
+							<li>Finally, I created a function that would append a new train to the table, and insert the train's information into 
+							the firebase database when it was working.</li>
 						</ul>
 					</div>
 				</div>

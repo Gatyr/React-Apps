@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import GifImages from './GifImages'
-import picDesc from '../../../utils/projects'
+//import picDesc from '../../../utils/projects'
 
 let btnArray = ["Futurama", "Overwatch", "King of the Hill", "Football", "The Simpsons", "Pixar", "Disney", "Coffee", 
 		"Jurassic Park", "James Bond", "Batman", "The Endocrine System", "No Results"];
@@ -55,36 +55,67 @@ class Giphy extends Component {
 						<div className="col-md-3" id="tech-used">
 							<h4>What I used:</h4>
 							<ul>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>Bootstrap</li>
-								<li>JavaScript</li>
-								<li>jQuery</li>
-								<li>Giphy API</li>
+								<li><img src="/logos/HTML5.png" alt=""/></li>
+								<li><img src="/logos/CSS.png" alt=""/></li>
+								<li><img src="/logos/javascript.png" alt=""/></li>
+								<li><img src="/logos/jquery.gif" alt=""/></li>
+								<li><img src="/logos/bootstrap.png" alt=""/></li>
+								<li><img src="/logos/giphy.gif" alt=""/></li>
 							</ul>
 						</div>
+						
 						<div className="col-md-6" id="project-picture">
-						<div className="img-link-btns">
-							<button className="btn btn-link" onClick={this.handleClick} value="1">1</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="2">2</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="3">3</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="4">4</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="5">5</button>
+							<div className="video-player">
+								<iframe title="Giphy" src="https://player.vimeo.com/video/233887822" width="640" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/233887822">Giphy</a> from <a href="https://vimeo.com/user791506">Gatyr</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+							</div>
 						</div>
-						<img id="myImg" src={"/project-images/Giphy/Giphy"+ this.state.src + ".png"} alt="" width="500" height="266"/>
-						<p>{picDesc.giphy[this.state.src - 1]}</p>
-					</div>
+
 						<div className="col-md-3" id="what-I-learned">
-							<h4>What I learned:</h4>
+							<h4>What's going on behind the scenes</h4>
 							<ul>
-								<li>DOM manipulation</li>
-								<li>AJAX calls</li>
-								<li>How to utilize click events</li>
-								<li>How to handle form submissions</li>
+								<li>First I created an array of subjects for the user to choose from, and used jQuery to render a series of buttons
+								to click on. Each button was given an ID-attribute that corresponds with what will be passed to the Giphy API call</li>
+								<li>Then I created a way for the user to submit a subject which, upon submission, would render a new button that could be 
+								clicked in order to display results for the new subject</li>
+								<li>Finally, the AJAX call to the Giphy API...</li>
+								<li>I set a jQuery method so that anytime a button is clicked, the results div would be emptied and an AJAX call would be made</li>
+								<li>Once the call was made, I looped through every result and used jQuery to assign various data-attributes for DOM manipulation in the future</li>
+								<li>Finally, I added a function so that whenever an image is clicked on, whether it was moving or still, the image would switch to the 
+								opposite state</li>
 							</ul>
 						</div>
 					</div>
 				</div>
+				{/*<div className="container how-it-works">
+					<h3>How it works</h3>
+					<div className="code-descriptor-div">
+						<img src="/project-images/Giphy/code1.png" alt="" />
+						<div className="code-descriptor-text">
+							<p>Set a variable equal to an array of strings for our stock buttons.</p>
+							<p>Create a function that, when called, will:</p>
+							<ol>
+								<li>Empty the buttons div</li>
+								<li>Loop through the buttonArray</li>
+								<li>Create a new variable 'a' equal to a new jQuery element to form a button</li>
+								<li>Create a new variable 'btnID' that will act as the search string for the Gihpy API call</li>
+								<li>Add the id attribute and the button text</li>
+								<li>Finally, append the jQuery element to the buttons div</li>
+							</ol>
+						</div>
+					</div>
+					<div className="code-descriptor-div">
+						<img src="/project-images/Giphy/code2.png" alt="" />
+						<div className="code-descriptor-text">
+							<p>jQuery selector for each button that, when clicked, will:</p>
+							<ol>
+								<li>set the subject for the API call equal to the ID of the button</li>
+								<li>set the URL for the AJAX call with that subject</li>
+								
+							</ol>
+						</div>
+					</div>
+				</div>*/}
+				
 				<div className="container demo" id="giphy-demo">
 					<h3>This is a demonstration of the app</h3>
 					<p>I originally developed the app to gain an understanding of how to use an API, manipulate the DOM with jQuery, and 

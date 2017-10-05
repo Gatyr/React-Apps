@@ -1,7 +1,12 @@
 html {
 	height: 100%;
 }
-
+h1, h2, h3, h4 {
+	font-family: 'Hammersmith One', sans-serif;
+}
+p, a {
+	font-family: 'Montserrat', sans-serif;
+}
 body {
 		margin: 0;
 		padding: 0;
@@ -96,7 +101,12 @@ body {
 	.jumbotron .container {
 		width: 60%;
 	}
-
+	.jumbotron h1 {
+		text-shadow: 2px 2px 2px #fff;
+	}
+	.jumbotron p {
+		text-shadow: 1px 1px 1px #eee;
+	}
 	#home-nav {
 		position: absolute;
 		bottom: 0;
@@ -124,9 +134,10 @@ body {
 	}
 
 	#technologies img {
-		height: 60px;
+		height: 100px;
 		width: auto;
 		margin: 10px;
+
 	}
 
 	#professional-experience {
@@ -145,7 +156,7 @@ body {
 	}
 
 	#img-div img {
-		height: 250px;
+		height: 300px;
 		width: auto;
 	}
 	#exercise img, #overwatch img, #csgo img, #programming img {
@@ -163,44 +174,42 @@ body {
 	.about-me {
 		display: inline-block;
 	}
-
 	#projects-nav {
 		background-color: #68696b;
 		height: auto;
 	}
-
 	#projects-nav button {
 		margin: 5px;
 
 	}
-
 	#project-summary h1 {
 		text-align: center;
+		margin: 0 0 20px 0;
 	}
 
 	#project-summary {
 		background-color: #e4eee5;
 	}
-
 	#lsit {
 		margin: 0;
 		padding: 0;
 		width: 100%;
 	}
-
-	#project-picture {
+	#project-picture, .video-player {
 		align-content: center;
 		text-align: center;
 	}
-
 	#project-picture ul {
 		padding: 0;
 	}
-
 	#tech-used, #what-I-learned {
 		margin-top: 25px;
 	}
-
+	#tech-used img {
+		height: 60px;
+		width: auto;
+		margin: 10px;
+	}
 	#myImg:hover{
 	    color: #424242; 
 	  -webkit-transition: all .3s ease-in;
@@ -212,9 +221,7 @@ body {
 	  transform: scale(2);
 	  -ms-transform: scale(.5); /* IE 9 */
 	  -webkit-transform: scale(2); /* Safari and Chrome */
-
 	}
-
 	#intangibles {
 		text-align: center;
 		width: 100%;
@@ -265,34 +272,50 @@ body {
 	text-align: center;
 	width: 100%;
 }
-
-#MongoDB-link {
-	background-color: #96b38f;
-	color: black;
-}
-
 #main-div {
 	position: relative;
 	height: 100%;
 	box-sizing: border-box;
 	padding-bottom: 120px;
 }
-
+#MongoDB-link {
+	background-color: #96b38f;
+	color: black;
+}
+#MongoDB-link:hover {
+	background-color: #5c8852;
+}
 #ECMAscript-link{
 	background-color: #c5d5cb;
 	color: black;
 }
-
+#ECMAscript-link:hover {
+	background-color: #7ab891;
+}
 #Postgres-link {
 	background-color: #9fa8a3;
 	color: black;
 }
-
+#Postgres-link:hover {
+	background-color: #5f6360;
+}
 #React-link {
 	background-color: #e3e0cf;
 	color: black;
 }
-
+#React-link:hover {
+	background-color: #cfc89b;
+}
+.tutorial-link {
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+.tutorial-link:hover {
+	box-shadow: 10px 10px 5px #888888;
+}
 .link-description {
 	padding: 5px;
 	text-align: left;
@@ -316,6 +339,7 @@ body {
 #jumbotron-footer ul {
 	margin-top: 20px;
 }
+
 #React-Tutorial-Main {
 	width: 100%;
 }
@@ -341,11 +365,84 @@ body {
 	margin-left: 10px;
 }
 
-.tutorial-section-div img {
+.tutorial-section-div img, .tutorial-section-div h4 {
 	margin-left: 20px;
+	padding-bottom: 10px;
 }
 .component-holder {
 	height: 100%;
+}
+.how-it-works img {
+	margin-left: 15px;
+}
+#project-div {
+	width: 100%;
+}
+#projects-links {
+	width: 100%;
+	align-content: center;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#projects-links a {
+	width: 300px;
+}
+.project-portal:hover .project-portal-description {
+	visibility: visible;
+	opacity: 1;
+}
+.project-portal {
+	width: 300px;
+	height: 500px;
+	border-radius: 10px;
+	border: 2px solid black;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	margin: 30px 50px 0 50px;
+	vertical-align: top;
+	position: relative;
+
+}
+.project-portal-description {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #c5d5cb;
+	font-weight: bold;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .2s, visibility .2s;
+	color: black;
+}
+#giphy-portal {
+	background-image: url('./images/preview-img/giphy.png');
+}
+#mongo-portal {
+	background-image: url('./images/preview-img/mongo.png');
+}
+#nyt-portal {
+	background-image: url('./images/preview-img/nyt.png');
+}
+#train-portal {
+	background-image: url('./images/preview-img/train.png');
+}
+#mysql-portal {
+	background-image: url('./images/preview-img/storefront.png');
+}
+#whackamole-portal {
+	background-image: url('./images/preview-img/whackamole.png');
+}
+.project-portal:hover {
+	box-shadow: 10px 10px 5px #888888;
+}
+.projects-class-div {
+	width: 100%;
+	margin: 20px 0 20px 0;
 }
 
 /*
@@ -357,8 +454,8 @@ body {
 
 @media (min-width: 1000px) {
 	.img-div {
-		width: 10%;
-		display: inline-block;
+		width: 20%;
+		display: inline;
 	}
 
 	#exercise, #overwatch, #csgo, #programming {
@@ -421,6 +518,42 @@ body {
 	.tutorial-section-div p {
 		width: auto;
 	}
+	.code-descriptor-div {
+		margin: 20px 0 10px 0;
+	}
+	.code-descriptor-div img {
+		vertical-align: top;
+	}
+	.code-descriptor-div p {
+		margin: 0;
+	}
+	.code-descriptor-text {
+		display: inline-block;
+		margin: 30px 0 0 30px;
+	}
+	#tech-used li {
+		display: inline-block;
+		align-self: center;
+	}
+	.page-break {
+		height: 500px;
+		width: 100%;
+	}
+	#experience-page-break {
+		background-image: url('./images/html.jpeg');
+		background-position: center;
+		background-size: 100% auto;
+		background-attachment: fixed;
+	}
+	#projects-page-break {
+		background-image: url('./images/jquery.jpeg');
+		background-position: center;
+		background-size: 100% auto;
+		background-attachment: fixed;
+	}
+	.project-portal {
+		display: inline-block;
+	}
 }
 
 #outer-div {
@@ -481,7 +614,25 @@ body {
 	.tutorial-section-div {
 		width: 100%;
 	}
-	
+	#tech-used li {
+		display: inline;
+	}
+	.page-break {
+		height: 500px;
+		width: 100%;
+	}
+	#experience-page-break {
+		background-image: url('./images/html.jpeg');
+		background-position: center;
+		background-size: auto 100%;
+		background-attachment: fixed;
+	}
+	#projects-page-break {
+		background-image: url('./images/jquery.jpeg');
+		background-position: center;
+		background-size: auto 100%;
+		background-attachment: fixed;
+	}
 }
 /*
 -------------------------------------------------------------
@@ -509,5 +660,24 @@ body {
 	}
 	.tutorial-section-div {
 		width: 100%;
+	}
+	#tech-used li {
+		display: inline;
+	}
+	.page-break {
+		height: 200px;
+		width: 100%;
+	}	
+	#experience-page-break {
+		background-image: url('./images/html.jpeg');
+		background-position: center;
+		background-size: auto 100%;
+		background-attachment: fixed;
+	}
+	#projects-page-break {
+		background-image: ('./images/jquery.jpeg');
+		background-position: center;
+		background-size: auto 100%;
+		background-attachment: fixed;
 	}
 }

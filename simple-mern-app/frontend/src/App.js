@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 import DataEntry from './components/DataEntry'
-import DataModification from './components/DataModification'
 import DataDisplay from './components/DataDisplay'
 
 class App extends Component {
@@ -12,7 +11,6 @@ class App extends Component {
       <div className="App">
         <DataEntry />
         <DataDisplay />
-        <DataModification />
       </div>
     );
   }
