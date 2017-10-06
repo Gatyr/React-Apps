@@ -39,6 +39,8 @@ class Projects extends Component {
 									</p>
 									<p>This was done as a freelance project for a friend, and is the first thing I've ever been paid to
 									make.</p>
+									<p>Please note: This links directly to the app, as I did not do anything new in the process of making 
+									it. Thus, I have not included a portfolio page for it.</p>
 								</div>
 							</div>
 						</a>

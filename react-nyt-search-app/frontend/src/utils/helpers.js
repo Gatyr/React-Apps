@@ -47,11 +47,11 @@ var helpers = {
 			
 	},
 
-	deleteSaved(title, data, url) {
+	deleteSaved(title, date, url) {
 		return axios.delete("http://localhost:4200/api/saved", {
 			params: {
 			"title": title,
-			"data": data,
+			"date": date,
 			"url": url
 			}
 		})

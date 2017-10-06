@@ -17,6 +17,7 @@ class NYTsearch extends Component {
 		return (
 			<div className="component-holder" id="project-summary">
 				<a href="https://github.com/Gatyr/React-Apps/tree/master/react-nyt-search-app"><h1>NYT Search React App</h1></a>
+				<a href="https://nyt-mern-app.herokuapp.com/"><h1>Visit the app page</h1></a>
 				<div className="container" id="lsit">
 					<div className="col-md-3" id="tech-used">
 						<h4>What I used:</h4>
@@ -49,7 +50,7 @@ class NYTsearch extends Component {
 					</div>
 				</div>
 				<br/>
-				<div className="container" id="preface">
+				{/*<div className="container" id="preface">
 					<h4>This is a limited demonstration of the app</h4>
 					<p>I originally built the app in order to integrate a React app and a MongoDB backend, but I haven't built that functionality into this page because I haven't yet learned how to deploy a secure backend. 
 					I invite you to checkout my Github repo if you would like more information on how I built a backend for the app to run locally.</p>
@@ -57,7 +58,7 @@ class NYTsearch extends Component {
 				<br/>
 				<div className="container demo" id="NYTsearch-demo">
 					<NYTmain />
-				</div>
+				</div>*/}
 			</div>
 		)
 	}

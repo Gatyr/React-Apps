@@ -10,6 +10,7 @@ class Main extends Component {
 				<div id="main-div">
 					<nav className="navbar navbar-light">
 						<h3>Daniel Ertel-Moore</h3>
+						<p>Portfolio made with React.js</p>
 					</nav>
 					<div id="main-content-div">
 						<Route path="/" component={Home} />

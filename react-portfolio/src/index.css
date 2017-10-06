@@ -48,6 +48,7 @@ body {
 
 	.navbar h3 {
 		padding-right: 30px;
+		margin-bottom: 0;
 	}
 
 	#main-footer {
@@ -443,6 +444,12 @@ body {
 .projects-class-div {
 	width: 100%;
 	margin: 20px 0 20px 0;
+}
+.navbar p {
+	margin: 0 10px 0 0;
+	float: right;
+	font-size: 10px;
+
 }
 
 /*
