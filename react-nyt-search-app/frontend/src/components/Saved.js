@@ -19,7 +19,7 @@ class Saved extends Component {
 	handleClick(item) {
 		console.log("CLICKED");
 		console.log(item);
-		helpers.deleteSaved(item.title, item.date, item.url).then(function() {
+		helpers.deleteSaved(item.url).then(function() {
 
 			helpers.getSaved().then(function(articleData) { //grab article data for saved articles
 				this.setState({ savedArticles: articleData.data }); //set state for saved articles component as returned data 
