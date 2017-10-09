@@ -16,9 +16,8 @@ class Results extends Component {
 	handleClick(item) {
 		console.log("CLICKED");
 		console.log(item);
-
 		helpers.postSaved(item.headline.main, item.pub_date, item.web_url).then(function() {
-			console.log(item.web_url);
+			//console.log(item.web_url);
 		});
 	}
 

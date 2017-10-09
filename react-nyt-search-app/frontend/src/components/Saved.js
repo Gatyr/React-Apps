@@ -11,8 +11,8 @@ class Saved extends Component {
 	// When this component mounts, get all saved articles from our db
 	componentDidMount() { 
 		helpers.getSaved().then(function(articleData) { //accesses the getSaved function from helpers
-			this.setState({ savedArticles: articleData.data }); //sets state for component as data from getSaved method
-			console.log("saved results", articleData.data); //logs in console
+			this.setState({ savedArticles: articleData }); //sets state for component as data from getSaved method
+			console.log("saved results", articleData); //logs in console
 		}.bind(this)); //ensure 'this' works in the callback
 	}
 
@@ -22,8 +22,8 @@ class Saved extends Component {
 		helpers.deleteSaved(item.url).then(function() {
 
 			helpers.getSaved().then(function(articleData) { //grab article data for saved articles
-				this.setState({ savedArticles: articleData.data }); //set state for saved articles component as returned data 
-				console.log("saved results", articleData.data); //log in console
+				this.setState({ savedArticles: articleData }); //set state for saved articles component as returned data 
+				console.log("saved results", articleData); //log in console
 			}.bind(this)); //ensure this works in callback
 		}.bind(this));
 	}
