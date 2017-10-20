@@ -26,25 +26,20 @@ export class Main extends Component {
 								</button>
 								
 						  	</div>
-
 						  	<div className="collapse navbar-collapse navbar-ex1-collapse">
 								<ul className="nav navbar-nav navbar-right">
-
 							  		<li><Link to="/search">Search</Link></li>
 							  		<li><Link to="/saved">Saved Articles</Link></li>
 								</ul>
 						  	</div>
 						</div>
 				  	</nav>
-
 					<div className="jumbotron">
 						<h2 className="text-center"><strong>(ReactJS) New York Times Article Scrubber</strong></h2>
 						<h3 className="text-center">Search for and save articles of interest.</h3>
 					</div>
-
 					<Route path="/saved" component={Saved}/>
 					<Route path="/search" component={Search}/>
-
 					<footer>
 						<hr />
 						<p className="pull-right">

@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
-//import picDesc from '../../../utils/projects'
+import {Link, Route} from 'react-router-dom'
+import Code from '../Code'
+import Overview from '../Overview'
 
 class Mongo extends Component {
 	constructor(props) {
@@ -11,10 +13,26 @@ class Mongo extends Component {
 	handleClick(event) {
 		this.setState({src: event.target.value})
 	}
+	componentDidMount () {
+		window.scrollTo(0, 0)
+	}
 	render() {
 		return (
 			<div className="component-holder" id="project-summary">
-				<a href="https://github.com/Gatyr/MongoWebScraper"><h1>Mongo Web Scraper</h1></a>
+				<div className="project-navbar">
+					<Link to="/mongo/overview"><h4>Overview</h4></Link>
+					<Link to="/mongo/code"><h4>Code Description</h4></Link>
+					<Link to="/mongo/demo"><h4>Demo</h4></Link>
+				</div>
+				<div className="component-holder">
+					<Route path="/mongo/code" render={(props) => (
+						<Code {...props} projectName='mongo' />
+					)} />
+					<Route path="/mongo/overview" render={(props) => (
+						<Overview {...props} projectName='mongo' />
+					)} />
+				</div>
+				{/*<a href="https://github.com/Gatyr/MongoWebScraper"><h1>Mongo Web Scraper on GitHub</h1></a>
 				<div className="container" id="lsit">
 					<div className="col-md-3" id="tech-used">
 						<h4>What I used:</h4>
@@ -42,7 +60,7 @@ class Mongo extends Component {
 							<li>Integrating the backend with the frontend to present user-manipulated data</li>
 						</ul>
 					</div>
-				</div>
+				</div>*/}
 			</div>
 		)
 	}

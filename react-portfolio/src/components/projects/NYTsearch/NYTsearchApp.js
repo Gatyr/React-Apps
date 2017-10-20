@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
-//import picDesc from '../../../utils/projects'
+import {Link, Route} from 'react-router-dom'
 
-import NYTmain from './NYTmain'
+import Overview from '../Overview'
+import Code from '../Code'
 
 class NYTsearch extends Component {
 	constructor(props) {
@@ -13,11 +14,27 @@ class NYTsearch extends Component {
 	handleClick(event) {
 		this.setState({src: event.target.value})
 	}
+	componentDidMount () {
+		window.scrollTo(0, 0)
+	}	
 	render() {
 		return (
 			<div className="component-holder" id="project-summary">
-				<a href="https://github.com/Gatyr/React-Apps/tree/master/react-nyt-search-app"><h1>NYT Search React App</h1></a>
-				<a href="https://nyt-mern-app.herokuapp.com/"><h1>Visit the app page</h1></a>
+				<div className="project-navbar" id="giphy-nav">
+					<Link to="/nytsearch/overview"><h4>Overview</h4></Link>
+					<Link to="/nytsearch/code"><h4>Code Description</h4></Link>
+					<Link to="/nytsearch/demo"><h4>Demo</h4></Link>
+				</div>
+				<a href="https://github.com/Gatyr/React-Apps/tree/master/react-nyt-search-app"><h1>NYT Search React App on GitHub</h1></a>
+				<div className="component-holder-2">
+					<Route path="/nytsearch/overview" render={(props) => (
+						<Overview {...props} projectName='nytsearch' />
+					)} />
+					<Route path="/nytsearch/code" render={(props) => (
+						<Code {...props} projectName='nytsearch' />
+					)} />
+				</div>
+				{/*<a href="https://nyt-mern-app.herokuapp.com/"><h1>Visit the app page</h1></a>
 				<div className="container" id="lsit">
 					<div className="col-md-3" id="tech-used">
 						<h4>What I used:</h4>
@@ -49,7 +66,7 @@ class NYTsearch extends Component {
 						</ul>
 					</div>
 				</div>
-				<br/>
+				<br/>*/}
 				{/*<div className="container" id="preface">
 					<h4>This is a limited demonstration of the app</h4>
 					<p>I originally built the app in order to integrate a React app and a MongoDB backend, but I haven't built that functionality into this page because I haven't yet learned how to deploy a secure backend. 

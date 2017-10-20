@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 class Projects extends Component {
 	render() {
@@ -8,7 +8,7 @@ class Projects extends Component {
 				<div id="projects-links">
 					<div className="projects-class-div" id="front-end-apps">
 						<h1>Front-end Apps</h1>
-						<Link to="/giphy">
+						<Link to="/giphy/overview">
 							<div className="project-portal" id="giphy-portal">
 								<div className="project-portal-description">
 									<h1>Giphy</h1>
@@ -19,7 +19,7 @@ class Projects extends Component {
 								</div>
 							</div>
 						</Link>
-						<Link to="/train">
+						<Link to="/train/overview">
 							<div className="project-portal" id="train-portal">
 								<div className="project-portal-description">
 									<h1>Train Scheduler</h1>
@@ -48,7 +48,7 @@ class Projects extends Component {
 					<div className="page-break" id="projects-page-break"></div>
 					<div className="projects-class-div" id="apps-with-a-server">
 						<h1>Apps With a Server</h1>
-						<Link to="/mysql">
+						<Link to="/mysql/overview">
 							<div className="project-portal" id="mysql-portal">
 								<div className="project-portal-description">
 									<h1>MySQL Storefront</h1>
@@ -58,7 +58,7 @@ class Projects extends Component {
 								</div>
 							</div>
 						</Link>
-						<Link to="/mongo">
+						<Link to="/mongo/overview">
 							<div className="project-portal" id="mongo-portal">
 								<div className="project-portal-description">
 									<h1>Mongo Web Scraper</h1>
@@ -70,7 +70,7 @@ class Projects extends Component {
 								</div>
 							</div>
 						</Link>
-						<Link to="/nytsearch">
+						<Link to="/nytsearch/overview">
 							<div className="project-portal" id="nyt-portal">
 								<div className="project-portal-description">
 									<h1>NYT Search  React App</h1>

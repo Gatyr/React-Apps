@@ -86,7 +86,6 @@ var helpers = {
 			return response;
 		}).then(function(data){
 			console.log(data);
-			return data;
 		});	
 	}
 }

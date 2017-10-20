@@ -1,4 +1,8 @@
 import React, {Component} from 'react'
+import {Link, Route} from 'react-router-dom'
+
+import Overview from './Overview'
+import Code from './Code'
 
 class MySQL extends Component {
 	constructor(props) {
@@ -7,42 +11,27 @@ class MySQL extends Component {
 
 		this.handleClick = this.handleClick.bind(this);
 	}
+	componentDidMount () {
+		window.scrollTo(0, 0)
+	}	
 	handleClick(event) {
 		this.setState({src: event.target.value})
 	}
 	render() {
 		return (
 			<div className="component-holder" id="project-summary">
-				<a href="https://github.com/Gatyr/MySQL-Storefront"><h1>MySQL Storefront</h1></a>
-				<div className="container" id="lsit">
-					<div className="col-md-3" id="tech-used">
-						<h4>What I used:</h4>
-						<ul>
-							<li><img src="/logos/javascript.png" alt="" /></li>
-							<li><img src="/logos/nodejs.png" alt="" /></li>
-							<li><img src="/logos/MySQL.png" alt="" /></li>
-						</ul>
-					</div>
-					<div className="col-md-6" id="project-picture">
-						{/*<div className="img-link-btns">
-							<button className="btn btn-link" onClick={this.handleClick} value="1">1</button>
-							<button className="btn btn-link" onClick={this.handleClick} value="2">2</button>
-						</div>
-						<img id="myImg" src={"/project-images/MySQLstore/mysql"+ this.state.src + ".png"} alt="" width="500" height="266"/>
-						<p>{picDesc.mysql[this.state.src - 1]}</p> */}
-						<iframe title="MySQL-app" src="https://player.vimeo.com/video/234932040" width="640" height="393" frameBorder="0" allowFullScreen></iframe>
-					</div>
-					<div className="col-md-3" id="what-I-learned">
-						<h4>What's going on behind the scenes:</h4>
-						<ul>
-							<li>One database with a table for Overwatch products, one for CS:GO products, one for all users and their budget,
-							and one for each user and their respective inventory</li>
-							<li>The app starts with an Inquirer prompt asking who you are signing in as</li>
-							<li>Upon signing in, you are asked which game you are buying for, which item, and what quantity</li>
-							<li>The database is updated accordingly, deducting the cost from your budget and moving that money to the store budget, and finally
-							 moving the items from the store table to the user inventory table.</li>
-						</ul>
-					</div>
+				<div className="project-navbar" id="giphy-nav">
+					<Link to="/mysql/overview"><h4>Overview</h4></Link>
+					<Link to="/mysql/code"><h4>Code Description</h4></Link>
+				</div>
+				<a href="https://github.com/Gatyr/MySQL-Storefront"><h1>MySQL Storefront on GitHub</h1></a>
+				<div className="component-holder-2">
+					<Route path="/mysql/overview" render={(props) => (
+						<Overview {...props} projectName='mysql' />
+					)} />
+					<Route path="/mysql/code" render={(props) => (
+						<Code {...props} projectName='mysql' />
+					)} />
 				</div>
 			</div>
 		)
@@ -50,3 +39,17 @@ class MySQL extends Component {
 }
 
 export default MySQL
+
+/*
+
+First, please have a look at my portfolio at danielertel.herokuapp.com
+
+Second, please note I would be willing to relocate for this position. 
+
+That said, hi! My name is Daniel, but friends and coworkers usually call my Danny, and I hope you will as well. In March of 2017 I decided to take my savings, quit my job, and put all of my effort into transitioning into a career as a web developer. Ever since, I've been learning as much as I can in order to make that happen. I think this position at eWebify would be a perfect opportunity to contribute to a new company and grow as a developer.
+
+I realize that you are looking for a candidate with more formal experience than myself, but I wholly believe that I am prepared to jump right in and make an impact from day one. To start, I'm a hard worker when it comes to learning new methods, and I know that I would be able to quickly acclimate myself to the new environment and meet or exceed expectations. In addition to that, I'm excellent at working with others and maneuvering such that the success of the team is ensured. 
+
+With the combination of my experience in team-oriented environments and my ability to work as a self-starter and learn new things, I feel confident that I would make a great addition to the eWebify team. Thank you for taking the time to review my application, and I look forward to hearing from you soon. 
+
+*/
